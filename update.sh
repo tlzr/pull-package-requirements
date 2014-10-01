@@ -18,6 +18,7 @@ then
         USERNAME=$WHOAMI
     fi
 elif [ $# -gt 1 ]
+then
     help
 fi
 
