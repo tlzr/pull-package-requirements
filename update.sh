@@ -22,8 +22,7 @@ then
     help
 fi
 
-USERNAME=$1
-HOMEDIR="/home/"
+HOMEDIR="/home"
 UPDATEDIR="${HOMEDIR}/${USERNAME}/debrpm/update"
 LOGDIR="${HOMEDIR}/${USERNAME}/history"
 URL='https://gerrit.mirantis.com/openstack'
