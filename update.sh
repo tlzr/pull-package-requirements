@@ -1,7 +1,8 @@
 #!/bin/bash -x
 
-UPDATEDIR='/home/mos/debrpm/update'
-BACKUPDIR='/home/mos/history'
+UPDATEDIR='~/debrpm/update'
+BACKUPDIR='~/history'
+
 for i in 'nova python-novaclient'
 do
     cd ${UPDATEDIR}/$i
