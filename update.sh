@@ -3,6 +3,9 @@
 UPDATEDIR='~/debrpm/update'
 BACKUPDIR='~/history'
 
+/bin/mkdir -p $UPDATEDIR
+/bin/mkdir -p $BACKUPDIR
+
 for i in 'nova python-novaclient'
 do
     cd ${UPDATEDIR}/$i
