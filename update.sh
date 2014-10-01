@@ -16,7 +16,7 @@ do
     cd ${UPDATEDIR}/$i
     echo "
     ######################
-    date +"%a, %d %b %Y %H:%M:%S %z
+    `date +%a, %d %b %Y %H:%M:%S %z`
     " >> ${BACKUPDIR}/$i.log
     git fetch >> ${BACKUPDIR}/$i.log
     git diff master origin/master >> ${BACKUPDIR}/$i.log
