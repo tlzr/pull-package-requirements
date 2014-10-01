@@ -8,6 +8,11 @@ BACKUPDIR='~/history'
 
 for i in 'nova python-novaclient'
 do
+    if [ ! -d ${UPDATEDIR}/$i ]
+    then
+        cd $UPDATEDIR
+        git clone https://gerrit.mirantis.com/openstack/$i
+    fi
     cd ${UPDATEDIR}/$i
     echo "
     ######################
